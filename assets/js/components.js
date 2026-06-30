@@ -1,6 +1,6 @@
 const NAV = `
 <nav class="site-nav">
-  <a href="index.html" class="nav-logo"><img src="logo.png" alt="PL Services LLC" class="nav-logo-img"></a>
+  <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="PL Services LLC" class="nav-logo-img"></a>
   <ul class="nav-links">
     <li class="nav-dropdown">
       <a href="#">Services ▾</a>
@@ -160,7 +160,7 @@ const FOOTER = `
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="logo.png" alt="PL Services LLC" style="height:52px;width:auto;display:block;margin-bottom:4px">
+        <img src="assets/images/logo.png" alt="PL Services LLC" style="height:52px;width:auto;display:block;margin-bottom:4px">
         <p>Locally owned in Sandusky, Ohio. Reliable lawn, home, auto &amp; hauling services across Northern Ohio since 2018.</p>
         <div class="footer-socials">
           <a href="https://www.facebook.com/peyton.lerch.2025/" target="_blank" rel="noopener">Facebook</a>
