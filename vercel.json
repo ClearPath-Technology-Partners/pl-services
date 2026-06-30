@@ -1,0 +1,13 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "installCommand": "",
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/(.*)/",
+      "destination": "/$1.html",
+      "statusCode": 308
+    }
+  ]
+}
