@@ -374,6 +374,47 @@ textarea.ff{resize:vertical;min-height:90px;font-family:var(--fb)}
 .svc-list-item svg{flex-shrink:0;margin-top:3px}
 .svc-list-item strong{color:var(--text)}
 
+/* Info card grid (contact cards, about "how we work" values) */
+.info-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.info-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:32px 28px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.info-card-icon{width:44px;height:44px;border-radius:10px;background:var(--accent-dim);border:1px solid var(--border-s);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.info-card-title{font-family:var(--fd);font-size:1.2rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.info-card p{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* County / service-area grid (about page) */
+.county-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.county-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:20px;display:flex;align-items:center;gap:14px;min-width:0}
+.county-card svg{flex-shrink:0}
+.county-card-text{min-width:0}
+.county-card-name{font-family:var(--fd);font-size:1.05rem;font-weight:800;text-transform:uppercase}
+.county-card-sub{font-size:13px;color:var(--muted)}
+
+/* Reviews rating summary */
+.rating-summary{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:40px 48px;margin-bottom:64px}
+.rating-summary-score{text-align:center}
+.rating-summary-num{font-family:var(--fd);font-size:5rem;font-weight:900;color:var(--accent);line-height:1}
+.rating-summary-stars{color:var(--accent);font-size:1.2rem;letter-spacing:3px;margin:6px 0}
+.rating-summary-lbl{font-size:13px;color:var(--muted)}
+.rating-summary-bars{border-left:1px solid var(--border);padding-left:48px;min-width:0}
+.rating-bar-row{display:flex;align-items:center;gap:14px}
+.rating-bar-lbl{font-size:13px;color:var(--muted);width:32px;flex-shrink:0}
+.rating-bar-track{flex:1;height:6px;background:rgba(73,220,247,.1);border-radius:3px;overflow:hidden}
+.rating-bar-fill{height:100%;background:var(--accent);border-radius:3px}
+.rating-bar-pct{font-size:13px;color:var(--muted);width:36px;text-align:right;flex-shrink:0}
+.rating-summary-note{font-size:14px;color:var(--muted);margin-top:20px;line-height:1.6}
+
+@media(max-width:768px){
+  .info-grid-3{grid-template-columns:1fr 1fr}
+  .county-grid{grid-template-columns:1fr 1fr}
+  .rating-summary{grid-template-columns:1fr;gap:24px;padding:28px 24px}
+  .rating-summary-bars{border-left:none;padding-left:0;border-top:1px solid var(--border);padding-top:24px}
+}
+@media(max-width:480px){
+  .info-grid-3{grid-template-columns:1fr}
+  .county-grid{grid-template-columns:1fr}
+  .info-card{padding:24px 20px}
+}
+
 @media(max-width:768px){
   .ph-grid,.ph-grid-4{grid-template-columns:1fr 1fr}
   .ph-item--wide{grid-column:span 2}

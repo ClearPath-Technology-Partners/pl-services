@@ -31,31 +31,31 @@
 <!-- RATING SUMMARY -->
 <section class="section" style="padding-bottom:48px">
   <div class="container">
-    <div style="display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:40px 48px;margin-bottom:64px">
-      <div style="text-align:center">
-        <div style="font-family:var(--fd);font-size:5rem;font-weight:900;color:var(--accent);line-height:1">5.0</div>
-        <div style="color:var(--accent);font-size:1.2rem;letter-spacing:3px;margin:6px 0">★★★★★</div>
-        <div style="font-size:13px;color:var(--muted)">Google Rating</div>
+    <div class="rating-summary">
+      <div class="rating-summary-score">
+        <div class="rating-summary-num">5.0</div>
+        <div class="rating-summary-stars">★★★★★</div>
+        <div class="rating-summary-lbl">Google Rating</div>
       </div>
-      <div style="border-left:1px solid var(--border);padding-left:48px">
+      <div class="rating-summary-bars">
         <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="display:flex;align-items:center;gap:14px">
-            <span style="font-size:13px;color:var(--muted);width:32px">5 ★</span>
-            <div style="flex:1;height:6px;background:rgba(73,220,247,.1);border-radius:3px;overflow:hidden"><div style="width:94%;height:100%;background:var(--accent);border-radius:3px"></div></div>
-            <span style="font-size:13px;color:var(--muted);width:36px;text-align:right">94%</span>
+          <div class="rating-bar-row">
+            <span class="rating-bar-lbl">5 ★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:94%"></div></div>
+            <span class="rating-bar-pct">94%</span>
           </div>
-          <div style="display:flex;align-items:center;gap:14px">
-            <span style="font-size:13px;color:var(--muted);width:32px">4 ★</span>
-            <div style="flex:1;height:6px;background:rgba(73,220,247,.1);border-radius:3px;overflow:hidden"><div style="width:5%;height:100%;background:var(--accent);border-radius:3px;opacity:.5"></div></div>
-            <span style="font-size:13px;color:var(--muted);width:36px;text-align:right">5%</span>
+          <div class="rating-bar-row">
+            <span class="rating-bar-lbl">4 ★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:5%;opacity:.5"></div></div>
+            <span class="rating-bar-pct">5%</span>
           </div>
-          <div style="display:flex;align-items:center;gap:14px">
-            <span style="font-size:13px;color:var(--muted);width:32px">3 ★</span>
-            <div style="flex:1;height:6px;background:rgba(73,220,247,.1);border-radius:3px;overflow:hidden"><div style="width:1%;height:100%;background:var(--accent);border-radius:3px;opacity:.3"></div></div>
-            <span style="font-size:13px;color:var(--muted);width:36px;text-align:right">1%</span>
+          <div class="rating-bar-row">
+            <span class="rating-bar-lbl">3 ★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:1%;opacity:.3"></div></div>
+            <span class="rating-bar-pct">1%</span>
           </div>
         </div>
-        <p style="font-size:14px;color:var(--muted);margin-top:20px;line-height:1.6">Based on 150+ verified Google and Facebook reviews from customers across Northern Ohio. Rated 5 stars for reliability, affordability, and quality of work.</p>
+        <p class="rating-summary-note">Based on 150+ verified Google and Facebook reviews from customers across Northern Ohio. Rated 5 stars for reliability, affordability, and quality of work.</p>
       </div>
     </div>
 
