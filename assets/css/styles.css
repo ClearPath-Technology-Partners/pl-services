@@ -79,6 +79,7 @@ p{font-family:var(--fb)}
 .trust-icon svg{width:15px;height:15px;color:var(--accent)}
 .trust-text{font-size:13px;color:var(--muted);line-height:1.35}
 .trust-text strong{color:var(--text);font-weight:500;display:block;font-size:13px}
+.hero-video-cta{position:absolute;right:28px;bottom:28px;z-index:3;box-shadow:0 10px 30px rgba(0,0,0,.55)}
 
 /* SECTIONS */
 .section{padding:100px 0}
@@ -295,6 +296,7 @@ textarea.ff{resize:vertical;min-height:90px;font-family:var(--fb)}
   .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
   .stat-grid{grid-template-columns:repeat(2,1fr)}
   .hero-trust{gap:14px}
+  .hero-video-cta{right:16px;bottom:16px;font-size:13px;padding:11px 18px}
   .area-inner{flex-direction:column;align-items:flex-start;gap:14px}
   .footer-bottom{flex-direction:column;align-items:flex-start}
   .map-text-row{flex-direction:column;align-items:flex-start}
