@@ -154,15 +154,28 @@ textarea.ff{resize:vertical;min-height:90px;font-family:var(--fb)}
 .counties{display:flex;gap:8px;flex-wrap:wrap}
 .county{padding:6px 14px;border:1px solid var(--border);border-radius:100px;font-size:13px;color:var(--muted)}
 
-/* REVIEWS */
+/* REVIEWS (Google-review style cards) */
 .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.rv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:28px}
-.rv-stars{color:var(--accent);font-size:.9rem;margin-bottom:14px;letter-spacing:2px}
-.rv-text{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px}
-.rv-author{display:flex;align-items:center;gap:12px}
-.rv-avatar{width:36px;height:36px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:700;font-size:13px;color:var(--accent);flex-shrink:0;text-transform:uppercase}
-.rv-name{font-size:14px;font-weight:500;color:var(--text)}
+.rv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.rv-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.rv-avatar-wrap{position:relative;flex-shrink:0}
+.rv-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:700;font-size:15px;color:#fff;text-transform:uppercase}
+.rv-google-badge{position:absolute;bottom:-2px;right:-2px;width:16px;height:16px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 2px var(--surface)}
+.rv-google-badge svg{width:10px;height:10px;display:block}
+.rv-header-text{min-width:0}
+.rv-name{font-size:14px;font-weight:600;color:var(--text)}
 .rv-loc{font-size:12px;color:var(--muted)}
+.rv-stars{display:flex;gap:2px;color:#FBBC04;margin-bottom:12px}
+.rv-stars svg{width:15px;height:15px;display:block}
+.rv-text{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* Google avatar color rotation (no real photos — colored initials like Google's default) */
+.reviews-grid .rv-card:nth-child(6n+1) .rv-avatar{background:#1a73e8}
+.reviews-grid .rv-card:nth-child(6n+2) .rv-avatar{background:#d93025}
+.reviews-grid .rv-card:nth-child(6n+3) .rv-avatar{background:#188038}
+.reviews-grid .rv-card:nth-child(6n+4) .rv-avatar{background:#e37400}
+.reviews-grid .rv-card:nth-child(6n+5) .rv-avatar{background:#9334e6}
+.reviews-grid .rv-card:nth-child(6n+6) .rv-avatar{background:#12a4af}
 
 /* STEPS */
 .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -295,6 +308,11 @@ textarea.ff{resize:vertical;min-height:90px;font-family:var(--fb)}
   .stat-card{padding:20px 12px}
   .stat-num{font-size:2.4rem}
   .disc-strip{padding:14px 18px;margin:32px 0}
+  .qf-card{padding:24px 20px}
+  .qf-title{font-size:1.5rem}
+  .q-left>p{margin-bottom:24px}
+  .rv-header{gap:10px}
+  .rv-avatar{width:38px;height:38px;font-size:13px}
 }
 @media(max-width:480px){
   .svc-grid{grid-template-columns:1fr}
@@ -308,6 +326,10 @@ textarea.ff{resize:vertical;min-height:90px;font-family:var(--fb)}
   .hero-ctas,.page-hero-ctas{flex-direction:column;align-items:flex-start}
   .stat-grid{grid-template-columns:repeat(2,1fr)}
   .svc-toggles{grid-template-columns:1fr}
+  .qf-card{padding:20px 16px}
+  .ff,textarea.ff,select.ff{font-size:16px}
+  .t-btn{font-size:14px;padding:12px}
+  .btn-submit{padding:15px;font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){
   .ticker-track{animation:none}
@@ -393,7 +415,7 @@ textarea.ff{resize:vertical;min-height:90px;font-family:var(--fb)}
 .rating-summary{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:40px 48px;margin-bottom:64px}
 .rating-summary-score{text-align:center}
 .rating-summary-num{font-family:var(--fd);font-size:5rem;font-weight:900;color:var(--accent);line-height:1}
-.rating-summary-stars{color:var(--accent);font-size:1.2rem;letter-spacing:3px;margin:6px 0}
+.rating-summary-stars{color:#FBBC04;font-size:1.2rem;letter-spacing:3px;margin:6px 0}
 .rating-summary-lbl{font-size:13px;color:var(--muted)}
 .rating-summary-bars{border-left:1px solid var(--border);padding-left:48px;min-width:0}
 .rating-bar-row{display:flex;align-items:center;gap:14px}

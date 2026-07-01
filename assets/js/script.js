@@ -87,6 +87,18 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Google-style star ratings for review cards
+  const STAR_PATH = 'M12 17.25l-6.16 3.73 1.64-7.03L2.5 9.77l7.19-.61L12 2.5l2.31 6.66 7.19.61-5 4.18 1.64 7.03z';
+  document.querySelectorAll('.rv-stars[data-rating]').forEach(el => {
+    const rating = parseInt(el.dataset.rating, 10) || 5;
+    let html = '';
+    for (let i = 0; i < 5; i++) {
+      const filled = i < rating;
+      html += `<svg viewBox="0 0 24 24" fill="${filled ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="${STAR_PATH}"/></svg>`;
+    }
+    el.innerHTML = html;
+  });
+
   // FAQ accordion
   document.addEventListener('click', e => {
     const btn = e.target.closest('.faq-q');

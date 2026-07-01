@@ -161,7 +161,7 @@ const FOOTER = `
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/images/logo.png" alt="PL Services LLC" style="height:52px;width:auto;display:block;margin-bottom:4px">
-        <p>Locally owned in Sandusky, Ohio. Reliable lawn, home, auto &amp; hauling services across Northern Ohio since 2018.</p>
+        <p>Locally owned in Sandusky, Ohio. Reliable lawn, home, auto &amp; hauling services across Northern Ohio since 2021.</p>
         <div class="footer-socials">
           <a href="https://www.facebook.com/peyton.lerch.2025/" target="_blank" rel="noopener">Facebook</a>
           <a href="https://www.instagram.com/pl.services_/" target="_blank" rel="noopener">Instagram</a>
