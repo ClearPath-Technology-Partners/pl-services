@@ -1,3 +1,14 @@
+// Hero background video (home page only) — skip autoplay for reduced-motion or data-saver users, poster frame stays visible instead
+(function initHeroVideo() {
+  const video = document.getElementById('hero-video');
+  if (!video) return;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  if (prefersReducedMotion || saveData) return;
+  const playPromise = video.play();
+  if (playPromise && playPromise.catch) playPromise.catch(() => {});
+})();
+
 // Hero beams canvas animation (home page only)
 (function initHeroBeams() {
   const canvas = document.getElementById('hero-beams-canvas');
