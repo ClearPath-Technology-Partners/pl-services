@@ -16,5 +16,7 @@ out/
 .cache/
 .parcel-cache/
 
-# Local settings
-.claude/
+# Local settings (but keep shared project skills)
+.claude/*
+!.claude/skills/
+!.claude/skills/**
